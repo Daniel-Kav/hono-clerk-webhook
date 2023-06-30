@@ -16,3 +16,7 @@ p{
     line-height: 1.5rem;
     letter-spacing: 1.5px;
 }
+legend{
+    color: blueviolet;
+    background-color: aqua;
+}
