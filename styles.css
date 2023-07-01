@@ -9,33 +9,7 @@ img{
     align-items: flex-start;
 }
 h3{
-    padding-top: 50px;
-}
-p{
-    list-style: none;
-    line-height: 1.5rem;
-    letter-spacing: 1.5px;
-}
-legend{
-    color: blueviolet;
-    background-color: aqua;
-}
-content{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-input{
-    flex: 1;
-    border:1px solid red;
-    margin-bottom: 5px;
-}
-.last_name{
-    display: flex;
-    flex-direction: column;
-}
-.last_name label{
-    margin-bottom: 5px;
+    padding-top: 30px;
 }
 button{
     margin-top: 50px;
@@ -49,4 +23,32 @@ button{
     inset 6px 7px #ffddaa;
     background-color: #f7aaba;
 
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+}
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border-color: chartreuse;
+}
+.input-control.error input{
+    border-color: red;
+}
+.input-control .error{
+    color: red;
+    font-size: 9px;
+    height: 13px;
 }
