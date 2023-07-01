@@ -32,11 +32,11 @@ body{
     flex-direction: column;
 }
 .input-control input{
-    border: 2px solid #f0f0f0;
+    border: 2px solid rgb(240, 240, 146);
     border-radius: 4px;
     display: block;
     font-size: 14px;
-    width: 100%;
+    width: 50%;
 }
 .input-control input:focus{
     outline: 0;
