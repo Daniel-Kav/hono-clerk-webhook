@@ -20,3 +20,33 @@ legend{
     color: blueviolet;
     background-color: aqua;
 }
+content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    flex: 1;
+    border:1px solid red;
+    margin-bottom: 5px;
+}
+.last_name{
+    display: flex;
+    flex-direction: column;
+}
+.last_name label{
+    margin-bottom: 5px;
+}
+button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    transition:.4s ease all;
+    box-shadow: inset -6px -7px #f7aaba,
+    inset 6px 7px #ffddaa;
+    background-color: #f7aaba;
+
+}
