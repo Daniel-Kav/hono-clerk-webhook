@@ -7,21 +7,22 @@ img{
 .container{
     display: flex;
     align-items: flex-start;
+    background-color: whitesmoke;
 }
 h3{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 button{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
     font-size: large;
     cursor: pointer;
     transition:.4s ease all;
-    box-shadow: inset -6px -7px #f7aaba,
-    inset 6px 7px #ffddaa;
-    background-color: #f7aaba;
+    box-shadow: inset -6px -7px #4049c3,
+    inset 6px 7px #445fd8;
+    background-color: #180ed7;
 
 }
 body{
@@ -37,6 +38,7 @@ body{
     display: block;
     font-size: 14px;
     width: 50%;
+    height: 20px;
 }
 .input-control input:focus{
     outline: 0;
