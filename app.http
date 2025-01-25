@@ -1,0 +1,48 @@
+
+GET http://localhost:8000/api/ok/
+
+###
+GET http://localhost:8000/api/timeout
+
+###
+
+GET http://localhost:8000/api/users?limit=4
+
+###
+
+GET http://localhost:8000/api/metrics
+
+###
+
+GET http://localhost:8000/api/books
+
+###
+
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Sample Book 2",
+  "author": "John Doe",
+  "year": 2023
+}
+
+###
+
+PUT http://localhost:8000/api/books/2
+Content-Type: application/json
+
+{
+    "author": "Kevin"
+}
+###
+DELETE http://localhost:8000/api/books/4
+
+###
+
+GET http://localhost:8000/api/books
+
+
+
+
