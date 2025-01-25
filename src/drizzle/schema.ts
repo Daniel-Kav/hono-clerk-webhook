@@ -1,4 +1,4 @@
-import { pgTable, serial, varchar, integer } from 'drizzle-orm/pg-core';
+import { pgTable, serial, varchar, integer, timestamp } from 'drizzle-orm/pg-core';
 
 // Define the BooksTable schema
 export const BooksTable = pgTable('books', {
@@ -11,3 +11,16 @@ export const BooksTable = pgTable('books', {
 // Types
 export type TIBook = typeof BooksTable.$inferInsert;
 export type TSBook = typeof BooksTable.$inferSelect;
+
+
+export const users = pgTable('users', {
+  id: varchar('id').primaryKey(),
+  clerkId: varchar('clerk_id').notNull(),
+  firstName: varchar('first_name'),
+  lastName: varchar('last_name'),
+  email: varchar('email').notNull(),
+  createdAt: timestamp('created_at').defaultNow(),
+});
+
+export type User = typeof users.$inferSelect;
+export type NewUser = typeof users.$inferInsert;
